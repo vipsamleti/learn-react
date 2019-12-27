@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-import Intro from '../intro/Intro'
-import Employees from '../../containers/employees/Index'
+import Main from '../main/Main'
 import './App.css';
 import 'whatwg-fetch';
 
@@ -11,13 +10,10 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
-          <p>
-            Learning ReactJS...
-          </p>
           
-          <Intro message = "Here you can pass a data to the component to render"/>
+          <h1>ReactJS Application for searching Web-Series details..</h1>
 
-          <Employees/>
+          <Main/>
 
         </header>
       </div>
