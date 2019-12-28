@@ -19,9 +19,9 @@ class Series extends Component{
 
         if(e.target.value !== ''){
 
-            console.log('http://api.tvmaze.com/search/shows?q='.concat(e.target.value));
+            console.log('https://api.tvmaze.com/search/shows?q='.concat(e.target.value));
 
-            fetch(`http://api.tvmaze.com/search/shows?q=${e.target.value}`)
+            fetch(`https://api.tvmaze.com/search/shows?q=${e.target.value}`)
                 .then(response => response.json())
                 .then(json => this.setState({ series: json, isFetching: false}));
         }

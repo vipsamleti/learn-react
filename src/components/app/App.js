@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { HashRouter, Route, Link } from "react-router-dom";
 import Main from '../main/Main'
 import './App.css';
 import 'whatwg-fetch';

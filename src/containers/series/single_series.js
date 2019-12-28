@@ -10,9 +10,9 @@ class SingleSeries extends Component{
 
         const {id} = this.props.match.params;
 
-        console.log('http://api.tvmaze.com/shows/'.concat(id).concat('?embed=episodes'));
+        console.log('https://api.tvmaze.com/shows/'.concat(id).concat('?embed=episodes'));
 
-        fetch(`http://api.tvmaze.com/shows/${id}?embed=episodes`)
+        fetch(`https://api.tvmaze.com/shows/${id}?embed=episodes`)
                 .then(response => response.json())
                 .then(json => this.setState({ singleSeriesJson: json}));
 
@@ -26,7 +26,7 @@ class SingleSeries extends Component{
 
         return(
             <div>
-                <a href="/">search more</a>
+                <a href="/learn-react">search more</a>
                 {
         
                     singleSeriesJson !== null
